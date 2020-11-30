@@ -19,6 +19,7 @@ class CreateOpinions extends Migration
             $table->integer('topic_id');
             $table->integer('user_id');
             $table->integer('opinionstate_id');
+            $table->timestamps();
         });
     }
 

@@ -17,6 +17,7 @@ class CreateOpinionsHasReferences extends Migration
             $table->increments('id');
             $table->integer('reference_id')->unique();
             $table->integer('opinion_id')->unique();
+            $table->timestamps();
         });
     }
 

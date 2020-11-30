@@ -19,6 +19,7 @@ class CreateTopics extends Migration
             $table->integer('theme_id');
             $table->integer('state_id');
             $table->integer('user_id');
+            $table->timestamps();
         });
     }
 

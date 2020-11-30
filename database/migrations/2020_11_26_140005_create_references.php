@@ -17,6 +17,7 @@ class CreateReferences extends Migration
             $table->increments('id');
             $table->string('description', 100);
             $table->string('url', 2000);
+            $table->timestamps();
         });
     }
 

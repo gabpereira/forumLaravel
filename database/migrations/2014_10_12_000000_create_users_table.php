@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('last_name', 100);
             $table->string('pseudo', 10)->unique();
             $table->integer('role_id');
+            $table->timestamps();
         });
     }
 

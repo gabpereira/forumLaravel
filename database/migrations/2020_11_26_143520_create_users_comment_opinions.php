@@ -19,6 +19,7 @@ class CreateUsersCommentOpinions extends Migration
             $table->integer('opinion_id');
             $table->string('comment', 5000);
             $table->integer('points')->default('0');
+            $table->timestamps();
         });
     }
 

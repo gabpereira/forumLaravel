@@ -17,6 +17,7 @@ class CreateOpinionstatetransitions extends Migration
             $table->increments('id');
             $table->integer('from_id');            
             $table->integer('to_id');
+            $table->timestamps();
         });
     }
 
