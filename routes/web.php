@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use OpinionController;
+use App\Http\Controllers\OpinionController;
 use App\Http\Controllers\ReferenceController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\StateController;
@@ -23,8 +23,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::Resource('opinions', OpinionController::class);
-Route::Resource('opinions', ReferenceController::class);
-Route::Resource('opinions', RoleController::class);
-Route::Resource('opinions', StateController::class);
-Route::Resource('opinions', ThemeController::class);
+Route::resource('opinions', OpinionController::class);
+Route::resource('opinions', ReferenceController::class);
+Route::resource('opinions', RoleController::class);
+Route::resource('opinions', StateController::class);
+Route::resource('opinions', ThemeController::class);
