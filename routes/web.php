@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 
 Route::resource('opinions', OpinionController::class);
-Route::resource('opinions', ReferenceController::class);
-Route::resource('opinions', RoleController::class);
-Route::resource('opinions', StateController::class);
-Route::resource('opinions', ThemeController::class);
+Route::resource('references', ReferenceController::class);
+Route::resource('roles', RoleController::class);
+Route::resource('states', StateController::class);
+Route::resource('themes', ThemeController::class);
