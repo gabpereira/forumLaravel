@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@gabpereira 
-XCarrel
-/
-myforum
-1
-0
-0
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-myforum/resources/views/references/create.blade.php
-@XCarrel
-XCarrel Have a proper reference create view
-Latest commit aceff93 9 days ago
- History
- 1 contributor
-12 lines (11 sloc)  379 Bytes
-  
 @extends ('layout')
 
 @section ('content')
@@ -41,15 +10,3 @@ Latest commit aceff93 9 days ago
         </div>
     </form>
 @endsection
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
