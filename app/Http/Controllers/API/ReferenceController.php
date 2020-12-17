@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use App\Http\Resources\ReferenceCollection;
 use App\Http\Resources\ReferenceResourceCollection;
 use App\Models\Reference;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ReferenceController extends Controller
 {

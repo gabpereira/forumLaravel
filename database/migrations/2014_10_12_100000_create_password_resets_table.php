@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOpinionstates extends Migration
+class CreatePasswordResetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateOpinionstates extends Migration
      */
     public function up()
     {
-        Schema::create('opinionstates', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name', 45)->unique();
-            $table->timestamps();
+        Schema::create('password_resets', function (Blueprint $table) {
+            $table->string('email')->index();
+            $table->string('token');
+            $table->timestamp('created_at')->nullable();
         });
     }
 
@@ -27,6 +27,6 @@ class CreateOpinionstates extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('opinionstates');
+        Schema::dropIfExists('password_resets');
     }
 }
