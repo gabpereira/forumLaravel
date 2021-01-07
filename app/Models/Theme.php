@@ -2,14 +2,15 @@
 
 namespace App\Models;
 
+use App\Models\Topic;
 use Illuminate\Database\Eloquent\Model;
 
 class Theme extends Model
 {
     protected $fillable = ['name'];
 
-    public function createThemes()
+    public function topic()
     {
-        $theme = Theme::create(['name' => 'NoSQL']);
+        return $this->hasMany(Topic::class);
     }
 }
