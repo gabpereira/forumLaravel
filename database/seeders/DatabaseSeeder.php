@@ -1,16 +1,7 @@
 <?php
 
-use Database\Seeders\RolesTableSeeder;
-use Database\Seeders\ForumuserOpinionTableSeeder;
-use Database\Seeders\ForumusersTableSeeder;    
-use Database\Seeders\OpinionReferenceTableSeeder;
-use Database\Seeders\OpinionsTableSeeder;      
-use Database\Seeders\OpinionstatesTableSeeder; 
-use Database\Seeders\OpinionstatetransitionsTableSeeder;
-use Database\Seeders\ReferencesTableSeeder;
-use Database\Seeders\StatesTableSeeder;        
-use Database\Seeders\ThemesTableSeeder;        
-use Database\Seeders\TopicsTableSeeder;  
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,18 +13,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([
-            RolesTableSeeder::class,
-            ForumusersTableSeeder::class,
-            StatesTableSeeder::class,
-            ThemesTableSeeder::class,
-            OpinionstatesTableSeeder::class,
-            ReferencesTableSeeder::class,
-            TopicsTableSeeder::class,
-            OpinionsTableSeeder::class,
-            ForumuserOpinionTableSeeder::class,
-            OpinionReferenceTableSeeder::class,
-            OpinionstatetransitionsTableSeeder::class,
-        ]);
+        // \App\Models\User::factory(10)->create();
+        $this->call(RolesTableSeeder::class);
+        $this->call(ForumusersTableSeeder::class);
+        $this->call(StatesTableSeeder::class);
+        $this->call(ThemesTableSeeder::class);
+        $this->call(OpinionstatesTableSeeder::class);
+        $this->call(ReferencesTableSeeder::class);
+        $this->call(TopicsTableSeeder::class);
+        $this->call(OpinionsTableSeeder::class);
+        $this->call(ForumuserOpinionTableSeeder::class);
+        $this->call(OpinionReferenceTableSeeder::class);
+        $this->call(OpinionstatetransitionsTableSeeder::class);
     }
 }

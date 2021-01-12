@@ -1,6 +1,8 @@
 <?php
 
+
 namespace App\Http\Resources;
+
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
@@ -14,6 +16,7 @@ class ReferenceResourceCollection extends ResourceCollection
      */
     public function toArray($request)
     {
-        return ReferenceCollection::collection($this->collection);
+        return ReferenceResource::collection($this->collection);
     }
+
 }

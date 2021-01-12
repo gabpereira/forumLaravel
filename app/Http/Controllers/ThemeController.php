@@ -14,9 +14,7 @@ class ThemeController extends Controller
      */
     public function index()
     {
-        $themes = Theme::all();
-        $messages = "chaine de charactère";
-        return view ('themes.index')->with(compact("themes","messages"));
+        return view ('themes.index');
     }
 
     /**
@@ -26,7 +24,7 @@ class ThemeController extends Controller
      */
     public function create()
     {
-        return view("themes.create");
+        //
     }
 
     /**
@@ -37,10 +35,7 @@ class ThemeController extends Controller
      */
     public function store(Request $request)
     {
-        $theme = new Theme();
-        $theme->name = $request->input('newTheme');
-        $theme->save();
-        return redirect(route('themes.index'));
+        //
     }
 
     /**
@@ -51,7 +46,8 @@ class ThemeController extends Controller
      */
     public function show($id)
     {
-        //
+        $theme = Theme::find($id);
+        return view('themes.show')->with(compact('theme'));
     }
 
     /**

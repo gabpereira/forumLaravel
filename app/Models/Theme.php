@@ -2,15 +2,20 @@
 
 namespace App\Models;
 
-use App\Models\Topic;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Theme extends Model
 {
-    protected $fillable = ['name'];
+    use HasFactory;
 
-    public function topic()
+    public $timestamps = false;
+
+    // ============= Relationships
+
+    public function topics()
     {
         return $this->hasMany(Topic::class);
     }
+
 }
