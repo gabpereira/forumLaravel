@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Opinion;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class OpinionController extends Controller
 {
@@ -80,5 +82,17 @@ class OpinionController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * Add a comment to an opinion
+     * @param Request $request
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function newComment(Request $request)
+    {
+        $opinion = Opinion::find($request->input('opinion'));
+        $opinion->comments()->attach(Auth::user(),['comment' => $request->input('newcomm'),'points' => $request->input('points')]);
+        return redirect(route('topics.show',$opinion->topic))->with('message','Commentaire enregistré');
     }
 }

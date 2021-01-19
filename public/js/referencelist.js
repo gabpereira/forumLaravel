@@ -116,7 +116,7 @@ for (i = 0; i < titles.length; i++) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\gabri\Documents\GitHub\carrel\myforum\resources\views\references\referencelist.js */"./resources/views/references/referencelist.js");
+module.exports = __webpack_require__(/*! C:\Users\gabri\Documents\GitHub\forumLaravel\resources\views\references\referencelist.js */"./resources/views/references/referencelist.js");
 
 
 /***/ })

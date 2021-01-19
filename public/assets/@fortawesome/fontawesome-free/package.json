@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.15.1",
-      "C:\\Users\\gabri\\Documents\\GitHub\\carrel\\myforum"
+      "C:\\Users\\gabri\\Documents\\GitHub\\forumLaravel"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.15.1",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.1.tgz",
   "_spec": "5.15.1",
-  "_where": "C:\\Users\\gabri\\Documents\\GitHub\\carrel\\myforum",
+  "_where": "C:\\Users\\gabri\\Documents\\GitHub\\forumLaravel",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",
