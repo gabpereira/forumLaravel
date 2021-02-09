@@ -25,3 +25,5 @@ Homestead.json
 .rocketeer/
 .idea/
 *.mwb.bak
+
+/config/*_rsa*
